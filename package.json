@@ -6,11 +6,20 @@
   "repository": "git@github.com:juri-t/hello-world-javascript-action.git",
   "author": "juri-t <puyo24.juri.takahashi@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "npm-run-all clean build:tsc build:ncc",
+    "build:ncc": "ncc build ./lib/index.js",
+    "build:tsc": "tsc",
+    "clean": "rimraf ./lib ./dist"
+  },
   "dependencies": {
     "@actions/core": "^1.2.1",
-    "@actions/github": "^2.0.1"
+    "@actions/github": "^2.0.1",
+    "@zeit/ncc": "^0.21.0"
   },
   "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.0",
     "typescript": "^3.7.5"
   }
 }
