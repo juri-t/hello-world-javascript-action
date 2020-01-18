@@ -1,0 +1,16 @@
+{
+  "name": "hello-world-javascript-action",
+  "version": "1.0.0",
+  "main": "./lib/index.js",
+  "private": true,
+  "repository": "git@github.com:juri-t/hello-world-javascript-action.git",
+  "author": "juri-t <puyo24.juri.takahashi@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.1",
+    "@actions/github": "^2.0.1"
+  },
+  "devDependencies": {
+    "typescript": "^3.7.5"
+  }
+}
