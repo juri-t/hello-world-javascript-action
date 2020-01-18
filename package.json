@@ -8,7 +8,7 @@
   "license": "MIT",
   "scripts": {
     "build": "npm-run-all clean build:tsc build:ncc",
-    "build:ncc": "ncc build ./lib/index.js",
+    "build:ncc": "ncc build ./dist/index.js -o ./lib",
     "build:tsc": "tsc",
     "clean": "rimraf ./lib ./dist"
   },
